@@ -1,3 +1,4 @@
+#[derive(Clone)]
 pub struct Rule {
     pub rule : (char, Vec<String>),
     // action : fn(step : Step),

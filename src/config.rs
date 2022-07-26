@@ -1,5 +1,6 @@
 use crate::rule::Rule;
 
+#[derive(Clone)]
 pub struct Config {
     pub axiom : String,
     pub rules : Vec<Rule>,

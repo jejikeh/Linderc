@@ -11,9 +11,8 @@ pub struct System {
 }
 
  impl System {
-    pub fn new(confi: config::Config) -> System {
-        let str = confi.axiom.to_string();
-        System { config: confi, generated_string: str, iteration: 0 }
+    pub fn new(config: config::Config) -> System {
+        System { config: config.clone(), generated_string: config.axiom, iteration: 0 }
     }
 
     pub fn generate_string(&mut self,iterations: i8) -> String {
